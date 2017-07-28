@@ -1,0 +1,121 @@
+
+    <% for(var i = 0; i < list.length; i++){ %>
+    <% if(list[i].type=="huanjingqiu"){ %>
+    <li class="list-block active" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+        <div class="leavel-1">
+            <% if(list[i].visible){ %>
+            <div class="yanjing active"><span></span></div>
+            <% }else {%>
+            <div class="yanjing"><span></span></div>
+            <% } %>
+
+            <div class="left-top-list">
+                <div class="list-leavel-1">
+                    <span class="list-icon hjq"></span>
+                    <div class="list-world"><%= list[i].name %></div>
+
+                </div>
+            </div>
+        </div>
+    </li>
+    <% }else if(list[i].type=="moxing"){ %>
+    <% if(list[i].children!=""){ %>
+    <li class="" >
+        <div class="leavel-1 list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+            <% if(list[i].visible){ %>
+            <div class="yanjing active"><span></span></div>
+            <% }else {%>
+            <div class="yanjing"><span></span></div>
+            <% } %>
+            <div class="left-top-list">
+                <div class="list-leavel-1">
+                    <span class="list-icon jianhao active has-son"></span>
+                    <div class="list-world"><%= list[i].name %></div>
+                    <span class="list-icon delete"></span>
+                </div>
+            </div>
+        </div>
+        <div class="leavel-2 toggleActive">
+            <% for(var k = 0; k < list[i].children.length; k++){ %>
+            <div class="leavel-2-list list-block" data-name="<%= list[i].children[k].name %>" data-type="<%= list[i].children[k].type %>">
+                <% if( list[i].children[k].visible){ %>
+                <div class="yanjing active"><span></span></div>
+                <% }else {%>
+                <div class="yanjing"><span></span></div>
+                <% } %>
+                <div class="left-top-list">
+                    <div class="list-leavel-1">
+                        <% if(k==list[i].children.length-1){ %>
+                        <span class="list-icon line end"></span>
+                        <% }else{ %>
+                        <span class="list-icon line"></span>
+                        <% } %>
+                        <span class="list-icon mx"></span>
+                        <div class="list-world"><%= list[i].children[k].name %></div>
+                        <!--<span class="list-icon delete"></span>-->
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </li>
+
+    <% }else{ %>
+    <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+        <div class="leavel-1">
+            <% if(list[i].visible){ %>
+            <div class="yanjing active"><span></span></div>
+            <% }else {%>
+            <div class="yanjing"><span></span></div>
+            <% } %>
+            <div class="left-top-list">
+                <div class="list-leavel-1">
+                    <span class="list-icon mx"></span>
+                    <div class="list-world"><%= list[i].name %></div>
+                    <span class="list-icon delete"></span>
+                </div>
+            </div>
+        </div>
+    </li>
+    <% } %>
+    <% }else if(list[i].type=="dengguang"){ %>
+    <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+        <div class="leavel-1">
+            <% if(list[i].visible){ %>
+            <div class="yanjing active"><span></span></div>
+            <% }else {%>
+            <div class="yanjing"><span></span></div>
+            <% } %>
+            <div class="left-top-list">
+                <div class="list-leavel-1">
+                    <span class="list-icon dg"></span>
+                    <div class="list-world"><%= list[i].name %></div>
+                    <span class="list-icon delete"></span>
+                </div>
+            </div>
+        </div>
+    </li>
+    <% }else if(list[i].type=="xiangji"){ %>
+    <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+        <div class="leavel-1">
+            <% if(list[i].visible){ %>
+            <div class="yanjing active"><span></span></div>
+            <% }else {%>
+            <div class="yanjing"><span></span></div>
+            <% } %>
+            <div class="left-top-list">
+                <div class="list-leavel-1">
+                    <span class="list-icon sxj"></span>
+                    <div class="list-world"><%= list[i].name %></div>
+                    <% if(i<2){ %>
+                    <span class="list-icon"></span>
+                    <% }else{ %>
+                    <span class="list-icon delete"></span>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </li>
+    <% } %>
+    <% } %>
+

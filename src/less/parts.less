@@ -1,0 +1,53 @@
+.rock-block
+{
+    position: absolute;
+    top:12px;
+    left: 36px;
+    display: none;
+    text-align: center;
+    .outarrow
+    {
+        border-color: transparent @border-color transparent transparent ;
+        border-style: solid;
+        border-width: 4px;
+        border-right-width: 6px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 5px;
+
+    }
+    .innerarrow
+    {
+        border-color: transparent @headcolor transparent transparent;
+        border-style: solid;
+        border-width: 4px;
+        border-right-width: 7px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 5px;
+        left:1px;
+
+    }
+    .rock-content
+    {
+        border: 1px solid;
+        border-color: @border-color;
+        background:@headcolor;
+        width: 70px;
+        margin: 0px auto 0px 10px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        .rock-main{
+            height: 18px;
+            line-height: 18px;
+        }
+    }
+}
+
+
+
+
+

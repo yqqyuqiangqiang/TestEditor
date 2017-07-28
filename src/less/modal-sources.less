@@ -1,0 +1,491 @@
+
+//.layui-m-layercont{
+//	padding:0;
+	.act-modal-sources{
+		position: absolute;
+		left:20px;
+		top:80px;
+		//transform: translateY(-50%);
+		z-index:100;
+		width: 1395px;
+		height: 732px;
+		padding:0;
+		overflow:hidden;
+		background:@headcolor;
+		.setActColor();
+		color:@actColor;
+		.setBorder(1px,#000);
+		text-align:left;
+		.sources-title{
+			h3{
+				line-height:52px;
+				padding-left:30px;
+				text-align:left;
+				font-size:14px;
+				.setBorderB(1px,#000);
+				i{
+					display:inline-block;
+					width:20px;
+					height:20px;
+					margin-right:15px;
+					background:url(../img/bgimg.png) -257px -940px no-repeat;
+					vertical-align:middle;
+				}
+			}
+			.sources-close{
+				position: absolute;
+				top:13px;
+				right: 5px;
+				width: 20px;
+				height: 20px;
+				background: url("../img/bgimg.png") -468px -545px no-repeat;
+			};
+
+		}
+
+		.modal-sources-con{
+			height: 100%;
+			position: relative;
+
+		}
+		.modal-sources-l-tab{
+			position: relative;
+			z-index:10;
+			width:141px;
+			height: 100%;
+			.setBorderR(1px,#000);
+			.tab-sources-t{
+				.setBorderB(1px,#000);
+				position:relative;
+				.tab-type{
+					position: relative;
+					i{
+						display: inline-block;
+						position: absolute;
+						top:2px;
+						right:15px;
+					}
+				}
+				>a{
+					display:block;
+					width:141px;
+					line-height:38px;
+					text-align:center;
+				}
+				&.hasson a{
+					border-bottom:1px solid #000;
+				}
+				.type-block{
+					padding-top:10px;
+				}
+				.create{
+					position: relative;
+					width: 117px;
+					cursor: pointer;
+					margin:0px auto 0px 10px;
+					line-height: 26px;
+					height: 26px;
+					border:1px solid @border-color;
+					border-radius: 4px;
+				}
+				.create i{
+					position: absolute;
+					margin-left:10px;
+					height: 100%;
+					width: 28px;
+					cursor: pointer;
+					background: url("../img/bgimg.png") no-repeat -225px -357px;
+				}
+				.create span{
+					float: left;
+					display: inline-block;
+					line-height: 26px;
+					height: 26px;
+					margin-left:15px;
+					border:0px;
+					margin-top:0px;
+					padding:0px;
+				}
+				.create-block{
+					position: relative;
+					display: none;
+					width: 117px;
+					margin:10px auto 0px 10px;
+					line-height: 26px;
+					height: 26px;
+					border:1px solid @border-color;
+					border-radius: 4px;
+					i{
+						float: left;
+						display: inline-block;
+						margin-left:10px;
+					}
+					&.active{
+						display:block;
+						width: 180px;
+						background: @bghover;
+						input{
+							text-align: left;
+						}
+					}
+					.eidt-color{
+						display: block;
+					}
+					.eidt-button{
+						display: inline-block;
+					}
+					.del-button{
+						display: inline-block;
+					}
+
+				}
+
+				ul{
+					padding-top:10px;
+					li{
+						position: relative;
+						width: 117px;
+						margin:0px auto 10px 10px;
+						line-height: 26px;
+						height: 26px;
+						cursor: pointer;
+						border:1px solid @border-color;
+						border-radius: 4px;
+
+						i{
+							float: left;
+							display: inline-block;
+							margin-left:10px;
+						}
+						&.active{
+							width: 180px;
+							background: @bghover;
+							input{
+								text-align: left;
+							}
+						}
+
+					}
+					li:hover{
+						cursor: pointer;
+					}
+				}
+				input{
+					position: absolute;
+					cursor: pointer;
+					height: 18px;
+					line-height: 18px;
+					border-radius: 0px;
+					display: inline-block;
+					top:2.5px;
+					width: 72px;
+					padding-left:5px;
+					&.edit{
+						margin-left:5px;
+						border:1px solid @border-color;
+					}
+				}
+				.eidt-color{
+					display: none;
+					width: 8px;
+					height: 8px;
+					float:left;
+					background: #f7ca55;
+					margin:8px auto auto 5px;
+					border:1px solid @border-color;
+				}
+				.eidt-button{
+					display: none;
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top:3px;
+					cursor: pointer;
+					right:30px;
+					background: @headcolor;
+					border-radius: 2px;
+					i{
+						margin:-3px 0px 0px 2px;
+					}
+				}
+				.eidt-buttonactive{
+					display: none;
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top:3px;
+					cursor: pointer;
+					right:30px;
+					background: @headcolor;
+					border-radius: 2px;
+					i{
+						margin:-3px 0px 0px 2px;
+						color:#8fd719;
+					}
+
+				}
+				.del-button{
+					display: none;
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top:3px;
+					right:5px;
+					cursor: pointer;
+					background: @headcolor;
+					border-radius: 2px;
+					i{
+						margin:-3px 0px 0px 2px;
+					}
+
+				}
+
+
+			}
+			.tab-sources-t.active{
+				>a{
+					background:@actBgColor;
+				}
+
+			}
+			.tab-sources-r{
+				position:absolute;
+				left:100%+1;
+				top:0;
+				li{
+					.setBorderR(1px,#000);
+					float:left;
+					a{
+						display:block;
+						width:113px;
+						line-height:38px;
+						text-align:center;
+					}
+				}
+				li.active{
+					a{
+						background:@actBgColor;
+					}
+				}
+			}
+		}
+
+		.modal-sources-r{
+			margin-left:142px;
+			.batch-management{
+				position: relative;
+				background: @mangetitle;
+				line-height: 38px;
+				height: 38px;
+				font-size:14px;
+				border-bottom:1px solid @border-color;
+				.batch-public{
+					position: absolute;
+					left:0px;
+
+					ul{
+						li{
+							float: left;
+							font-size:14px;
+							width: 113px;
+							border-right:1px solid @border-color;
+							text-align: center;
+							cursor: pointer;
+						}
+						li:hover{
+							background: @actBgColor;
+							color:@color-hover;
+						}
+					}
+				}
+				.sources-manage,
+				.sources-manage-btn,
+				.sources-manage-over {
+					.sources-btn;
+				}
+				.sources-manage-group,
+				.sources-manage-del{
+					.sources-btn;
+					float:left;
+					margin: 5px 0px 0px 20px;
+
+				}
+				.sources-manage-btn:hover,
+				.sources-manage-group:hover,
+				.sources-manage-del:hover,
+				.sources-manage-over:hover{
+					.sources-btn-hover;
+				}
+				.sources-manage:hover{
+					background: @actBgColor;
+					color:@color-hover;
+				}
+				.sources-manage-btn.active{
+					.sources-btn-hover;
+				}
+				.sources-search{
+					float: right;
+					position: relative;
+					cursor: pointer;
+					width: 350px;
+					margin:5px 20px 0px 0px;
+					input{
+						height: 100%;
+						line-height: 26px;
+						display: block;
+						height: 26px;
+						width: 310px;
+						padding:0px 30px 0px 10px;
+						border:1px solid @border-color;
+						border-radius: 4px;
+					}
+					i{
+						display: inline-block;
+						position: absolute;
+						width: 30px;
+						right:0px;
+						color:#fff;
+						top:-4px;
+					}
+				}
+			}
+			.batch-con{
+				position: relative;
+				width: 100%;
+				height: 608px;
+				background: @groupdetail;
+				border-bottom:1px solid @border-color;
+				.batch-group{
+					position: relative;
+					background: @mangetitle;
+					line-height: 38px;
+					height: 38px;
+					width: 100%;
+					border-bottom:1px solid @border-color;
+					.batch-type{
+						float: left;
+						overflow: hidden;
+						ul{
+							float: left;
+							overflow: hidden;
+							li{
+								float: left;
+								font-size:14px;
+								width: 113px;
+								border-right:1px solid @border-color;
+								text-align: center;
+								cursor: pointer;
+							}
+							li:hover{
+								background: @actBgColor;
+								color:@color-hover;
+							}
+						}
+					}
+					.move-right{
+						float:right;
+						width: 42px;
+						cursor: pointer;
+						border-left:1px solid @border-color;
+						height: 100%;
+						background: url("../img/bgimg.png") no-repeat -460px -724px;
+					}
+					.add-type{
+						float:right;
+						width: 42px;
+						cursor: pointer;
+						height: 100%;
+						background: url("../img/bgimg.png") no-repeat -53px -928px;
+					}
+				}
+
+				.sources-list{
+					ul{
+						li{
+							position: relative;
+							float: left;
+							width: 180px;
+							height: 170px;
+							margin-top:15px;
+							margin-left:24px;
+							text-align: center;
+							&.sources-upfile{
+								.sources-upfile-img{
+									position: relative;
+									width: 180px;
+									height: 150px;
+									overflow: hidden;
+									background: url("../img/upbg.png") left top;
+
+								}
+								.upload-img{
+									position: absolute;
+									top:0px;
+									left:0px;
+									z-index:1;
+									width: 100%;
+									height: 100%;
+
+								}
+								.upload-img img{
+									width: 100%;
+									height: 100%;
+								}
+								.upload-img:hover{
+									transform: scale(1.2);
+								}
+								.upload-word{
+									position: absolute;
+									bottom:20px;
+									width: 100%;
+									text-align: center;
+									font-size:14px;
+								}
+
+							}
+							.sources-list-img{
+								position: relative;
+								height: 150px;
+								cursor: pointer;
+								img{
+									width: 100%;
+									height: 100%;
+								}
+							}
+
+							.sources-list-edit{
+								position: absolute;
+								top:0px;
+								left:0px;
+								width: 100%;
+								height: 100%;
+								.checkbox{
+									position: absolute;
+									right:4px;
+									top:4px;
+								}
+							}
+							.sources-list-edit:hover{
+								background-color:rgba(73,73,73,0.7);
+
+							}
+
+							span{
+								position: absolute;
+								bottom:0px;
+								left:0px;
+								width: 100%;
+								display: inline-block;
+								color:@color-hover;
+							}
+						}
+					}
+				}
+			}
+
+
+
+		}
+	}
+//}
+	

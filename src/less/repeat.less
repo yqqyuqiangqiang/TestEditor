@@ -1,0 +1,256 @@
+/**
+*滑动条公共样式
+*/
+
+/**
+*组件，依赖滑动条样式
+*/
+.material-color-ph{
+    margin-bottom:10px;
+    width:100%;
+    > span{
+        margin-top: 2px;
+    }
+    .material-progress{
+        .act-progress-common;
+    }
+
+}
+/**
+*滑动条
+*/
+.act-progress-common{
+
+    overflow:hidden;
+    padding-right:65px;
+    position:relative;
+    height:21px;
+
+    .act-progress-box{
+        position:relative;
+        display:inline-block;
+        .setActBg();
+        width:100%;
+        height:11px;
+        border-radius:11px;
+        margin-right:10px;
+        margin-top:3px;
+        .setActVertical();
+        top:-1px;
+        .act-progress-bar{
+            position:absolute;
+            width:20px;
+            height:100%;
+            border-top-left-radius:11px;
+            border-bottom-left-radius:11px;
+            left:0;
+            top:0;
+            background:@actBarColor;
+        }
+        .act-progress-bar-icon{
+            position:absolute;
+            width:11px;
+            height:20px;
+            background:#fff;
+            border-radius:5px;
+            top:-3px;
+            left:10px;
+            cursor:pointer;
+        }
+    }
+    input{
+        position:absolute;
+        right:0;
+        top:0;
+        width:55px;
+        height:21px;
+        text-align:center;
+        .setActBg();
+        .setActRadius();
+    }
+}
+
+
+/**
+*属性切换公共样式，依赖滑动条样式
+*/
+.act-diffuse{
+    width:100%;
+    .diffuse-tit{
+        height:29px;
+        line-height:29px;
+        padding:0 13px;
+        .setBorderT(1px,#000);
+        .setActBg();
+        p{
+            i{
+                display:inline-block;
+                width:16px;
+                height:16px;
+                background:url(../img/webEngine.png) -140px -162px no-repeat;
+               .setActVertical();
+                margin-right:10px;
+                cursor:pointer;
+            }
+            i.active{
+                background:url(../img/webEngine.png) -140px -242px no-repeat;
+            }
+        }
+        span{
+            width:16px;
+            height:16px;
+            background:url(../img/webEngine.png) -789px -119px no-repeat;
+            margin-top:6px;
+            cursor:pointer;
+        }
+        span.active{
+            background-position:-736px -119px;
+        }
+    }
+    .act-diffuse-fun{
+        display:none;
+        padding:14px 27px;
+        .setBorderT(1px,#000);
+        .diffuse-fun-l{
+            margin-right:10px;
+            .diffuse-fun-l-mb{
+                width:45px;
+                height:45px;
+                .setBorder(1px,#000);
+                margin-right:10px;
+                .setActBg();
+                background:url(../img/webEngine1.png) -1152px -46px;
+            }
+            .diffuse-fun-btn{
+                .diffuse-fun-l-cancel{
+                    width:20px;
+                    height:20px;
+                    background:url(../img/webEngine.png) -735px -159px no-repeat;
+                    .setActBg();
+                    margin-bottom:7px;
+                    .setActRadius();
+                }
+                .diffuse-fun-l-enlarge{
+                    .diffuse-fun-l-cancel;
+                    margin-bottom:0;
+                    background-position:-735px -202px;
+                }
+            }
+        }
+
+        .diffuse-fun-progress{
+            margin-top: 14px;
+            .act-progress-common;
+        }
+    }
+}
+/**
+*颜色选择器
+*/
+.material-color{
+    margin-bottom:17px;
+    span{
+        display:inline-block;
+        width:44px;
+        height:22px;
+        background:@actColor;
+        cursor:pointer;
+        .setActVertical();
+        .setBorder(1px,#000);
+    }
+    i{
+        width:16px;
+        height:16px;
+        .setActVertical();
+        background:url(/images/webEngine2.png) -429px -46px no-repeat;
+        background-color:#000;
+        .setActRadius();
+        position:relative;
+        left:12px;
+        cursor:pointer;
+    }
+    i.selected{
+        background-position:-536px -46px;
+    }
+}
+
+/**
+*复选框样式
+*/
+.act-normal-select{
+    font-weight:500;
+    color:#fff;
+    i{
+        display:inline-block;
+        width:16px;
+        height:16px;
+        .setActVertical();
+        background:url(../img/webEngine2.png) -429px -46px no-repeat;
+        background-color:#000;
+        .setActRadius();
+        margin-right:8px;
+    }
+    i.selected{
+        background-position: -536px -46px;
+    }
+}
+
+/**
+*切换面板公共样式,单独样式,包含了复选框样式
+*/
+.act-common-mianban{
+    .act-diffuse;
+
+    .act-normal{
+
+        .act-diffuse;
+
+        .act-diffuse-fun{
+             .setBorderT(0,#000);
+             display:block;
+        }
+        .act-normal-block{
+            display:none;
+            .setBorderT(1px,#000);
+        }
+        .act-normal-btn{
+            padding:14px 27px;
+            button{
+                width:122px;
+                height:34px;
+                line-height:34px;
+                text-align:center;
+                .setActBg();
+                .setActRadius();
+                .setActColor();
+                cursor:pointer;
+            }
+            button.act-normal-fx{
+                border-top-right-radius:0;
+                border-bottom-right-radius:0;
+            }
+            button.act-normal-at{
+                border-top-left-radius:0;
+                border-bottom-left-radius:0;
+            }
+            button.active{
+                color:@actBarColor;
+                background-color:#000;
+            }
+        }
+        .act-diffuse-fun{
+            padding-bottom:0;
+        }
+        .act-normal-select{
+            padding:14px 27px;
+            .act-normal-select;
+        };
+    }
+
+    .act-highlight{
+        .act-diffuse;
+        .act-highlight-block{
+            display:none;
+        }
+    }
+}

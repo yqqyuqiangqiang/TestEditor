@@ -1,0 +1,130 @@
+
+    <% if(property.type=="moxing"){ %>
+
+    <div class="act-diffuse left-block-bg">
+        <div class="diffuse-tit clearfix" style="border:0px;">
+            <p class="fl"><i class="act-toggle-icon"></i>参数</p>
+            <!--<span class="fr"></span>-->
+        </div>
+        <div class="property-block">
+            <div class="element-position ">
+                <span class="element-position-title">位置:</span>
+                <ul>
+                    <li><span class="word-pos">X</span><input type="text" value="<%= property.position.x %>" class="inputsmall" data-max="400" data-min="-200" data-name="px"></li>
+                    <li><span class="word-pos">Y</span><input type="text" value="<%= property.position.y %>" class="inputsmall" data-max="400" data-min="-200" data-name="py"></li>
+                    <li><span class="word-pos">Z</span><input type="text" value="<%= property.position.z %>" class="inputsmall" data-max="400" data-min="-200" data-name="pz"></li>
+                </ul>
+            </div>
+            <div class="element-position">
+                <div class="element-list-title clearfix">旋转:</div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">X：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.x %>" data-max="360" data-min="-360" data-name="rx">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Y：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.y %>" data-max="360" data-min="-360" data-name="ry">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Z：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.z %>" data-max="360" data-min="-360" data-name="rz">
+                    </div>
+                </div>
+            </div>
+            <div class="element-position">
+                <div class="element-list-title clearfix">比例:</div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">X：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.x %>" data-max="1000" data-min="1" data-name="sx">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Y：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.y %>" data-max="1000" data-min="1" data-name="sy">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Z：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.z %>" data-max="1000" data-min="1" data-name="sz">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="act-diffuse-fun act-highlight-block clearfix">
+            <div class="diffuse-fun-l fl clearfix">
+                <div class="diffuse-fun-l-mb fl"></div>
+                <div class="fl diffuse-fun-btn">
+                    <div class="diffuse-fun-l-cancel"></div>
+                    <div class="diffuse-fun-l-enlarge"></div>
+                </div>
+            </div>
+            <div class="diffuse-fun-progress">
+                  <span class="act-progress-box">
+                    <i class="act-progress-bar"></i>
+                    <i class="act-progress-bar-icon"></i>
+                  </span>
+                <input type="text" value="100" data-max="400" data-min="-200" data-name="pz">
+            </div>
+        </div>
+    </div>
+    <!-- 漫反射 -->
+    <div class="act-diffuse">
+        <div class="diffuse-tit clearfix">
+            <p class="fl"><i class="act-toggle-icon"></i>可编辑网格</p>
+            <!--<span class="fr"></span>-->
+        </div>
+        <div class="property-block">
+            <div class="element-position ">
+                <span class="element-edit-title distance">名字:</span>
+                <input type="text" class="inputlarge">
+            </div>
+            <div class="element-position mgtop">
+                <span class="element-edit-title ">统计:</span>
+                <div class="divblock">
+                    <span>顶点：2000</span> <br/>
+                    <span>三角面：2000</span><br/>
+                    <span>三角面：2000</span><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

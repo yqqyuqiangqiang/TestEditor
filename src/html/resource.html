@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>编辑功能</title>
+  </head>
+  <body>
+  <div class="edit-head">
+      <a href="" class="edit-logo"></a>
+      <div class="edit-head-middle">
+        <ul class="edit-tool">
+          <li class="tool_1 tool-list">
+              <a href=""><span> 模型</span></a>
+          </li>
+          <li class="tool_2 tool-list">
+              <a href=""><span> 图片</span></a>
+          </li>
+          <li class="tool_3 tool-list">
+              <a href=""><span>材质</span></a>
+          </li>
+          <li class="tool_4 tool-list">
+              <a href=""><span>摄像机</span></a>
+          </li>
+          <li class="tool_5 tool-list">
+              <a href=""><span>灯光</span></a>
+              <div class="tool_menu hide">
+                  <div class="icon-point"></div>
+                  <ul>
+
+                      <li class="son_1_1"><a href="" class="fangxing"><span> 点光源</span></a></li>
+                      <li class="son_1_2"><a href="" class="yuanxing"><span> 聚光灯</span></a></li>
+                      <li class="son_1_3"><a href="" class="qiuti"><span> 方向光</span></a></li>
+                      <li class="son_1_4"><a href="" class="lifangti"><span> 全局光</span></a></li>
+                  </ul>
+              </div>
+          </li>
+          <li class="tool_6 tool-list">
+              <a href=""><span>几何体</span></a>
+              <div class="tool_menu hide">
+                  <div class="icon-point"></div>
+                  <ul>
+                      <li class="son_1_1"><a href="" class="fangxing"><span> 方形</span></a></li>
+                      <li class="son_1_2"><a href="" class="yuanxing"><span> 圆形</span></a></li>
+                      <li class="son_1_3"><a href="" class="qiuti"><span> 球体</span></a></li>
+                      <li class="son_1_4"><a href="" class="lifangti"><span> 立方体</span></a></li>
+                  </ul>
+              </div>
+          </li>
+          <li class="tool_7 tool-list">
+              <a href=""><span>更多</span></a>
+              <div class="tool_menu hide">
+                  <div class="icon-point"></div>
+                  <ul>
+                      <li class="son_1_1"><a href="" class="fangxing"><span> 特效</span></a></li>
+                      <li class="son_1_2"><a href="" class="yuanxing"><span> 音乐</span></a></li>
+                      <li class="son_1_3"><a href="" class="qiuti"><span> 视频</span></a></li>
+                      <li class="son_1_4"><a href="" class="lifangti"><span> UI</span></a></li>
+                      <li class="son_1_5"><a href="" class="lifangti"><span> 案例</span></a></li>
+                  </ul>
+              </div>
+          </li>
+        </ul>
+
+
+      </div>
+      <div class="edit-head-action">
+        <ul class="action-block">
+          <li><a href="">预览</a></li>
+          <li><a href="">保存</a></li>
+          <li><a href="">发布</a></li>
+          <li><a href="">退出</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="eidt-content">
+      <div class="edit-main">
+          <div id="content-left">
+              <div class="edit-left-menu">
+                <ul>
+                  <li class="menu_1">
+                      <a href=""> </a>
+                      <div class="rock-block">
+                          <div class="outarrow"></div>
+                          <div class="innerarrow"></div>
+                          <div class="rock-content">
+                              <div class="rock-main">项目管理</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="menu_2 active ">
+                      <a href=""></a>
+                      <div class="rock-block">
+                          <div class="outarrow"></div>
+                          <div class="innerarrow"></div>
+                          <div class="rock-content">
+                              <div class="rock-main">场景列表</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="menu_3">
+                      <a href=""></a>
+                      <div class="rock-block">
+                          <div class="outarrow"></div>
+                          <div class="innerarrow"></div>
+                          <div class="rock-content">
+                              <div class="rock-main">历史记录</div>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="edit-element">
+                  <div class="edit-element-top">
+
+                      <div id="domscrool" class="contentHolder">
+                          <div class="content">
+                                <ul class="left-top-ul" id="element-list">
+                                    <!--<li class="list-block">-->
+                                        <!--<div class="leavel-1">-->
+                                            <!--<div class="yanjing"><span></span></div>-->
+                                            <!--<div class="left-top-list">-->
+                                                <!--<div class="list-leavel-1">-->
+                                                    <!--<span class="list-icon mx"></span>-->
+                                                    <!--<div class="list-world">模型名称</div>-->
+                                                    <!--<span class="list-icon delete"></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                    <!--<li class="list-block">-->
+                                        <!--<div class="leavel-1 has-son ">-->
+                                            <!--<div class="yanjing"><span></span></div>-->
+                                            <!--<div class="left-top-list">-->
+                                                <!--<div class="list-leavel-1">-->
+                                                    <!--<span class="list-icon jianhao active"></span>-->
+                                                    <!--<div class="list-world">模型名称</div>-->
+                                                    <!--<span class="list-icon delete"></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="leavel-2 toggleActive">-->
+                                            <!--<div class="leavel-2-list list-block">-->
+                                                <!--<div class="yanjing"><span></span></div>-->
+                                                <!--<div class="left-top-list has-son">-->
+                                                    <!--<div class="list-leavel-1">-->
+                                                        <!--<span class="list-icon line"></span>-->
+                                                        <!--<span class="list-icon mx"></span>-->
+                                                        <!--<div class="list-world">模型名称</div>-->
+                                                        <!--<span class="list-icon delete"></span>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="leavel-2-list list-block">-->
+                                                <!--<div class="yanjing"><span></span></div>-->
+                                                <!--<div class="left-top-list">-->
+                                                    <!--<div class="list-leavel-1">-->
+                                                        <!--<span class="list-icon line end"></span>-->
+                                                        <!--<span class="list-icon mx"></span>-->
+                                                        <!--<div class="list-world">模型名称</div>-->
+                                                        <!--<span class="list-icon delete"></span>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="edit-left-line">
+                      <div class="line-left"></div>
+                      <div class="line-right"></div>
+                  </div>
+                  <div class="edit-element-bottom">
+                      <div id="propertyscroll" class="contentHolder">
+                          <div class="content">
+                              <div class="property-mianban">
+                                  <div class="act-common-mianban" id="model-property">
+                                      <!-- 漫反射 -->
+                                              <div class="act-diffuse left-block-bg" >
+                                                  <div class="diffuse-tit clearfix" style="border:0px;">
+                                                      <p class="fl"><i class="act-toggle-icon"></i>参数</p>
+                                                      <!--<span class="fr"></span>-->
+                                                  </div>
+                                                  <div class="property-block">
+                                                      <div class="element-position ">
+                                                          <span class="element-position-title">位置:</span>
+                                                          <ul>
+                                                              <li><span class="word-pos">X</span><input type="text" value="0.0" class="inputsmall" data-max="400" data-min="-200" data-name="px"></li>
+                                                              <li><span class="word-pos">Y</span><input type="text" value="0.0" class="inputsmall" data-max="400" data-min="-200" data-name="py"></li>
+                                                              <li><span class="word-pos">Z</span><input type="text" value="0.0" class="inputsmall" data-max="400" data-min="-200" data-name="pz"></li>
+
+                                                          </ul>
+                                                      </div>
+                                                      <div class="element-position">
+                                                          <div class="element-list-title clearfix">旋转:</div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">X：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="000" data-max="360" data-min="-360" data-name="rx">
+
+                                                              </div>
+                                                          </div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">Y：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="000" data-max="360" data-min="-360" data-name="ry">
+                                                              </div>
+                                                          </div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">Z：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="000" data-max="360" data-min="-360" data-name="rz">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="element-position">
+                                                          <div class="element-list-title clearfix">比例:</div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">X：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="1" data-max="1000" data-min="1" data-name="sx">
+                                                              </div>
+                                                          </div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">Y：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="1" data-max="1000" data-min="1" data-name="sy">
+                                                              </div>
+                                                          </div>
+                                                          <div class="material-color-ph clearfix left-param-margin">
+                                                              <span class="fl">Z：</span>
+                                                              <div class="material-progress">
+                                                                    <span class="act-progress-box">
+                                                                      <i class="act-progress-bar"></i>
+                                                                      <i class="act-progress-bar-icon"></i>
+                                                                    </span>
+                                                                  <input type="text" value="1" data-max="1000" data-min="1" data-name="sz">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="act-diffuse-fun act-highlight-block clearfix">
+                                                      <div class="diffuse-fun-l fl clearfix">
+                                                          <div class="diffuse-fun-l-mb fl"></div>
+                                                          <div class="fl diffuse-fun-btn">
+                                                              <div class="diffuse-fun-l-cancel"></div>
+                                                              <div class="diffuse-fun-l-enlarge"></div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="diffuse-fun-progress">
+                                                      <span class="act-progress-box">
+                                                        <i class="act-progress-bar"></i>
+                                                        <i class="act-progress-bar-icon"></i>
+                                                      </span>
+                                                          <input type="text" value="100" data-max="400" data-min="-200" data-name="pz">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <!-- 漫反射 -->
+                                              <div class="act-diffuse">
+                                                  <div class="diffuse-tit clearfix">
+                                                      <p class="fl"><i class="act-toggle-icon"></i>可编辑网格</p>
+                                                      <!--<span class="fr"></span>-->
+                                                  </div>
+
+
+                                                  <div class="property-block">
+                                                      <div class="element-position ">
+                                                          <span class="element-edit-title distance">名字:</span>
+                                                          <input type="text" class="inputlarge">
+                                                      </div>
+                                                      <div class="element-position mgtop">
+                                                          <span class="element-edit-title ">统计:</span>
+                                                          <div class="divblock">
+                                                              <span>顶点：2000</span> <br/>
+                                                              <span>三角面：2000</span><br/>
+                                                              <span>三角面：2000</span><br/>
+                                                          </div>
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <!--<div class="left-line-bar">-->
+
+              <!--</div>-->
+          </div>
+          <div id="content-right">
+              <div class="act-r">
+                  <div class="act">
+                    <!-- 功能面板tab栏 -->
+                    <div class="act-tab">
+                      <ul class="clearfix">
+                        <li class="active">
+                          <a data-set=".act-material" href="javascript:;"><i></i>材质
+                          </a>
+                        </li>
+                        <li>
+                          <a data-set=".act-special" href="javascript:;"><i></i>特效
+                          </a>
+                        </li>
+                        <li>
+                          <a data-set=".act-component" href="javascript:;"><i></i>高级组件
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 材质面板 -->
+                    <div class="act-material" data-toggle="tab">
+                      <div class="act-material-global clearfix">
+                        <div class="material-global-img fl">
+
+                        </div>
+                        <div class="material-global-name fr">
+                          <input class="material-input-name" type="text" value="材质球名称">
+
+                          <div class="material-selected">
+                            <select>
+                              <option>Phong</option>
+                              <option>simsing</option>
+                            </select><button  class="madal-sources">材质库<i></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="act-line">
+                        <div></div>
+                      </div>
+
+                      <div class="act-material-color">
+                        <div class="material-color clearfix">
+                          颜色：<span class="color"></span>
+                          <i class="fr"></i>
+
+                        </div>
+                        <div class="material-color-ph clearfix">
+                          <span class="fl">平滑度：</span>
+                          <div class="material-progress">
+                            <span class="act-progress-box">
+                              <i class="act-progress-bar"></i>
+                              <i class="act-progress-bar-icon"></i>
+                            </span>
+                            <input type="text" value="000" data-max="400" data-min="-200" data-name="pz">
+                          </div>
+                        </div>
+                        <div class="material-color-js clearfix">
+                          <span class="fl">金属性：</span>
+                          <div class="material-progress">
+                            <span class="act-progress-box">
+                              <i class="act-progress-bar"></i>
+                              <i class="act-progress-bar-icon"></i>
+                            </span>
+                            <input type="text" value="000" data-max="400" data-min="-200" data-name="pz">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="act-common-mianban" style="position:relative;">
+                            <!-- 漫反射 -->
+                            <div class="act-diffuse">
+                              <div class="diffuse-tit clearfix">
+                                <p class="fl"><i class="active act-toggle-icon"></i>漫反射</p>
+                                <span class="fr"></span>
+                              </div>
+                              <div class="act-diffuse-fun act-highlight-block clearfix">
+                                <div class="diffuse-fun-l fl clearfix">
+                                  <div class="diffuse-fun-l-mb fl"></div>
+                                  <div class="fl diffuse-fun-btn">
+                                    <div class="diffuse-fun-l-cancel"></div>
+                                    <div class="diffuse-fun-l-enlarge"></div>
+                                  </div>
+                                </div>
+                                <div class="diffuse-fun-progress">
+                                  <span class="act-progress-box">
+                                    <i class="act-progress-bar"></i>
+                                    <i class="act-progress-bar-icon"></i>
+                                  </span>
+                                  <input type="text" value="000" data-max="400" data-min="-200" data-name="pz">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- 法线 -->
+                            <div class="act-normal">
+                              <div class="diffuse-tit clearfix">
+                                <p class="fl"><i class="active act-toggle-icon"></i>法线</p>
+                                <span class="fr"></span>
+                              </div>
+                              <div class="act-normal-block">
+                                <div class="act-normal-btn">
+                                  <button class="act-normal-fx active">法线</button><button class="act-normal-at">凹凸</button>
+                                </div>
+                                <div class="act-diffuse-fun clearfix">
+                                  <div class="diffuse-fun-l fl clearfix">
+                                    <div class="diffuse-fun-l-mb fl"></div>
+                                    <div class="fl diffuse-fun-btn">
+                                      <div class="diffuse-fun-l-cancel"></div>
+                                      <div class="diffuse-fun-l-enlarge"></div>
+                                    </div>
+                                  </div>
+                                  <div class="diffuse-fun-progress">
+                                    <span class="act-progress-box">
+                                      <i class="act-progress-bar"></i>
+                                      <i class="act-progress-bar-icon"></i>
+                                    </span>
+                                    <input type="text" value="000" data-max="400" data-min="-200" data-name="pz">
+                                  </div>
+                                </div>
+                                <div class="act-normal-select">
+                                  <i></i>Flip green（-Y）
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <!-- 高光 -->
+                            <div class="act-highlight">
+                              <div class="diffuse-tit clearfix">
+                                <p class="fl"><i class="active act-toggle-icon"></i>高光</p>
+                                <span class="fr active"></span>
+                              </div>
+                              <div class="act-highlight-block">
+
+                              </div>
+                            </div>
+
+                            <!-- 高光 -->
+                            <div class="act-highlight">
+                              <div class="diffuse-tit clearfix">
+                                <p class="fl"><i class="active act-toggle-icon"></i>高光</p>
+                                <span class="fr active"></span>
+                              </div>
+                              <div class="act-highlight-block">
+
+                              </div>
+                            </div>
+
+                            <!-- 高光 -->
+                            <div class="act-highlight">
+                              <div class="diffuse-tit clearfix">
+                                <p class="fl"><i class="active act-toggle-icon"></i>高光</p>
+                                <span class="fr active"></span>
+                              </div>
+                              <div class="act-highlight-block">
+
+                              </div>
+                            </div>
+                        </div>
+                      <div class="act-material-bottom">
+                        <a class="act-material-create" href="javascript:;">创建材质</a><a class="act-material-save"  href="javascript:;">保存设置</a>
+                      </div>
+                    </div>
+                    <div class="act-special" data-toggle="tab">a</div>
+
+                    <div class="act-component" data-toggle="tab">b</div>
+
+                  </div>
+                </div>
+          </div>
+          <div id="content-scene">
+                <div id="content-scene-main">
+                </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="act-modal-sources">
+      <div class="sources-title">
+          <h3><i></i>资源库</h3>
+          <div class="sources-close"></div>
+      </div>
+      <div class="modal-sources-con clearfix">
+          <div class="modal-sources-l-tab fl">
+              <ul>
+                  <li class="active tab-sources-t">
+                      <a href="javascript:;">公共资源</a>
+                      </li>
+                  <li class="tab-sources-t hasson">
+                      <a href="javascript:;" class="tab-type">个人上传 <i class="icon iconfont icon-gongyongsanjiaoxingzuobian1"></i></a>
+                      <div class="type-block">
+                          <div class="create clearfix"><span>创建文件夹</span><i></i></div>
+                          <div class="create-block">
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#8fd719"></i>
+                                  <div class="eidt-color" data-color="#8fd719" style="background:#8fd719"></div>
+                                  <input class="edit" value="" placeholder="文件夹名称" >
+                                  <div class="eidt-button"><i class="icon iconfont icon-duihao" style="color: #8fd719"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                          </div>
+                          <ul class="guazai">
+                              <li class="">
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#000"></i>
+                                  <div class="eidt-color hide" data-color="#000"  style="background:#000"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button hide"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#456"></i>
+                                  <div class="eidt-color" data-color="#456" style="background:#456"></div>
+                                  <input value="项目一" disabled="disabled">
+
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#fff"></i>
+                                  <div class="eidt-color" data-color="#fff" style="background:#fff"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                              <li>
+                              <i class="icon iconfont icon-wenjianjia" style="color:#666"></i>
+                              <div class="eidt-color" data-color="#666" style="background:#666"></div>
+                              <input value="项目一" disabled="disabled">
+                              <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                              <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                              <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                          </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#888"></i>
+                                  <div class="eidt-color" data-color="#888" style="background:#888"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#969"></i>
+                                  <div class="eidt-color"  data-color="#969"  style="background:#969"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#357"></i>
+                                  <div class="eidt-color" data-color="#357" style="background:#357"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li><li>
+                              <i class="icon iconfont icon-wenjianjia" style="color:#996"></i>
+                              <div class="eidt-color" data-color="#996" style="background:#996"></div>
+                              <input value="项目一" disabled="disabled">
+                              <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                              <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                              <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                          </li>
+                              <li>
+                                  <i class="icon iconfont icon-wenjianjia" style="color:#221"></i>
+                                  <div class="eidt-color" data-color="#221" style="background:#221"></div>
+                                  <input value="项目一" disabled="disabled">
+                                  <div class="eidt-buttonactive"><i class="icon iconfont icon-duihao"></i></i></div>
+                                  <div class="eidt-button"><i class="icon iconfont icon-editor"></i></div>
+                                  <div class="del-button"><i class="icon iconfont icon-shanchu"></i></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="tab-sources-t">
+                      <a href="javascript:;">收藏夹</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="modal-sources-r">
+              <div class="batch-management">
+                    <div class="batch-public hide">
+                        <ul>
+                            <li>建筑</li>
+                            <li>角色</li>
+                            <li>道具</li>
+                        </ul>
+                    </div>
+                    <div class="group-select">
+
+                    </div>
+                    <div class="sources-manage-select">
+                        <div class="select-tips">移动至</div>
+                        <div class="select-block"></div>
+                    </div>
+                    <div class="sources-manage-del">删除</div>
+                    <div class="sources-manage-group">管理分组</div>
+                    <div class="sources-manage">管理</div>
+                    <div class="sources-manage-over hide">完成</div>
+                    <div class="sources-manage-btn hide">全选</div>
+                    <div class="sources-search hide">
+                        <input type="text" name="search">
+                        <i class="icon iconfont icon-sousuo"></i>
+                    </div>
+              </div>
+              <div class="batch-con">
+                  <div class="batch-group">
+                      <div class="batch-type">
+                          <ul>
+                              <li>ALL</li>
+                              <li>自定义分类1</li>
+                              <li>自定义分类2</li>
+                          </ul>
+                      </div>
+                      <div class="move-right"></div>
+                      <div class="add-type"></div>
+                  </div>
+                  <div class="batch-group-detail">
+                        <div class="sources-list">
+                            <ul>
+                                <li class="sources-upfile">
+                                    <div class="sources-upfile-img">
+                                        <div class="upload-img"><img src="../img/jiahao.png" alt=""></div>
+                                        <div class="upload-word">上传文件</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <div class="sources-list-edit">
+                                            <div class="checkbox"><i class="icon iconfont icon-duihao"></i></div>
+                                        </div>
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                                <li>
+                                    <div class="sources-list-img">
+                                        <img src="../img/yang.jpg" alt="">
+                                    </div>
+                                    <span>文件名.fpx</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                  </div>
+
+
+              </div>
+              <div id="page"></div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/colors.js"></script>
+  <script src="./js/jqColorPicker.js"></script>
+  <script type="text/javascript" src="./js/scene/three.min.js"></script>
+  <script src="./js/scene/libs/signals.min.js"></script>
+  <script type="text/javascript" src = "./js/scene/Init.js"></script>
+  <script src="./js/scene/Editor.js"></script>
+  <script type="text/javascript" src = "./js/scene/controls/TransformControls.js"></script>
+  <script type="text/javascript" src = "./js/scene/controls/VRControls.js"></script>
+  <script type="text/javascript" src = "./js/scene/effects/VREffect.js"></script>
+  <script src="./js/scene/vr/WebVR.js"></script>
+  <script src="./js/scene/controls/EditorControls.js"></script>
+  <script src="./js/scene/vr/ViveController.js"></script>
+  <script src="./js/perfect-scrollbar.js"></script>
+  <script src="./js/jquery.mousewheel.js"></script>
+  <script src="./js/template.js"></script>
+  <script id="elementlist"  type="text/html">
+      <% for(var i = 0; i < list.length; i++){ %>
+      <% if(list[i].type=="huanjingqiu"){ %>
+      <li class="list-block active" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+          <div class="leavel-1">
+              <% if(list[i].visible){ %>
+              <div class="yanjing active"><span></span></div>
+              <% }else {%>
+              <div class="yanjing"><span></span></div>
+              <% } %>
+
+              <div class="left-top-list">
+                  <div class="list-leavel-1">
+                      <span class="list-icon hjq"></span>
+                      <div class="list-world"><%= list[i].name %></div>
+
+                  </div>
+              </div>
+          </div>
+      </li>
+      <% }else if(list[i].type=="moxing"){ %>
+      <% if(list[i].children!=""){ %>
+      <li class="" >
+          <div class="leavel-1 list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+              <% if(list[i].visible){ %>
+              <div class="yanjing active"><span></span></div>
+              <% }else {%>
+              <div class="yanjing"><span></span></div>
+              <% } %>
+              <div class="left-top-list">
+                  <div class="list-leavel-1">
+                      <span class="list-icon jianhao active has-son"></span>
+                      <div class="list-world"><%= list[i].name %></div>
+                      <span class="list-icon delete"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="leavel-2 toggleActive">
+              <% for(var k = 0; k < list[i].children.length; k++){ %>
+              <div class="leavel-2-list list-block" data-name="<%= list[i].children[k].name %>" data-type="<%= list[i].children[k].type %>">
+                  <% if( list[i].children[k].visible){ %>
+                  <div class="yanjing active"><span></span></div>
+                  <% }else {%>
+                  <div class="yanjing"><span></span></div>
+                  <% } %>
+                  <div class="left-top-list">
+                      <div class="list-leavel-1">
+                          <% if(k==list[i].children.length-1){ %>
+                          <span class="list-icon line end"></span>
+                          <% }else{ %>
+                          <span class="list-icon line"></span>
+                          <% } %>
+                          <span class="list-icon mx"></span>
+                          <div class="list-world"><%= list[i].children[k].name %></div>
+                          <!--<span class="list-icon delete"></span>-->
+                      </div>
+                  </div>
+              </div>
+              <% } %>
+          </div>
+      </li>
+
+      <% }else{ %>
+      <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+          <div class="leavel-1">
+              <% if(list[i].visible){ %>
+              <div class="yanjing active"><span></span></div>
+              <% }else {%>
+              <div class="yanjing"><span></span></div>
+              <% } %>
+              <div class="left-top-list">
+                  <div class="list-leavel-1">
+                      <span class="list-icon mx"></span>
+                      <div class="list-world"><%= list[i].name %></div>
+                      <span class="list-icon delete"></span>
+                  </div>
+              </div>
+          </div>
+      </li>
+      <% } %>
+      <% }else if(list[i].type=="dengguang"){ %>
+      <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+          <div class="leavel-1">
+              <% if(list[i].visible){ %>
+              <div class="yanjing active"><span></span></div>
+              <% }else {%>
+              <div class="yanjing"><span></span></div>
+              <% } %>
+              <div class="left-top-list">
+                  <div class="list-leavel-1">
+                      <span class="list-icon dg"></span>
+                      <div class="list-world"><%= list[i].name %></div>
+                      <span class="list-icon delete"></span>
+                  </div>
+              </div>
+          </div>
+      </li>
+      <% }else if(list[i].type=="xiangji"){ %>
+      <li class="list-block" data-name="<%= list[i].name %>" data-type="<%= list[i].type %>">
+          <div class="leavel-1">
+              <% if(list[i].visible){ %>
+              <div class="yanjing active"><span></span></div>
+              <% }else {%>
+              <div class="yanjing"><span></span></div>
+              <% } %>
+              <div class="left-top-list">
+                  <div class="list-leavel-1">
+                      <span class="list-icon sxj"></span>
+                      <div class="list-world"><%= list[i].name %></div>
+                      <% if(i<2){ %>
+                      <span class="list-icon"></span>
+                      <% }else{ %>
+                      <span class="list-icon delete"></span>
+                      <% } %>
+                  </div>
+              </div>
+          </div>
+      </li>
+      <% } %>
+      <% } %>
+
+  </script>
+
+<script id="elementProperty"  type="text/html">
+    <% if(property.type=="moxing"){ %>
+
+    <div class="act-diffuse left-block-bg">
+        <div class="diffuse-tit clearfix" style="border:0px;">
+            <p class="fl"><i class="act-toggle-icon"></i>参数</p>
+            <!--<span class="fr"></span>-->
+        </div>
+        <div class="property-block">
+            <div class="element-position ">
+                <span class="element-position-title">位置:</span>
+                <ul>
+                    <li><span class="word-pos">X</span><input type="text" value="<%= property.position.x %>" class="inputsmall" data-max="400" data-min="-200" data-name="px"></li>
+                    <li><span class="word-pos">Y</span><input type="text" value="<%= property.position.y %>" class="inputsmall" data-max="400" data-min="-200" data-name="py"></li>
+                    <li><span class="word-pos">Z</span><input type="text" value="<%= property.position.z %>" class="inputsmall" data-max="400" data-min="-200" data-name="pz"></li>
+                </ul>
+            </div>
+            <div class="element-position">
+                <div class="element-list-title clearfix">旋转:</div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">X：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.x %>" data-max="360" data-min="-360" data-name="rx">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Y：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.y %>" data-max="360" data-min="-360" data-name="ry">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Z：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.rotation.z %>" data-max="360" data-min="-360" data-name="rz">
+                    </div>
+                </div>
+            </div>
+            <div class="element-position">
+                <div class="element-list-title clearfix">比例:</div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">X：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.x %>" data-max="1000" data-min="1" data-name="sx">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Y：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.y %>" data-max="1000" data-min="1" data-name="sy">
+                    </div>
+                </div>
+                <div class="material-color-ph clearfix left-param-margin">
+                    <span class="fl">Z：</span>
+
+                    <div class="material-progress">
+                        <span class="act-progress-box">
+                          <i class="act-progress-bar"></i>
+                          <i class="act-progress-bar-icon"></i>
+                        </span>
+                        <input type="text" value="<%= property.scale.z %>" data-max="1000" data-min="1" data-name="sz">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="act-diffuse-fun act-highlight-block clearfix">
+            <div class="diffuse-fun-l fl clearfix">
+                <div class="diffuse-fun-l-mb fl"></div>
+                <div class="fl diffuse-fun-btn">
+                    <div class="diffuse-fun-l-cancel"></div>
+                    <div class="diffuse-fun-l-enlarge"></div>
+                </div>
+            </div>
+            <div class="diffuse-fun-progress">
+                  <span class="act-progress-box">
+                    <i class="act-progress-bar"></i>
+                    <i class="act-progress-bar-icon"></i>
+                  </span>
+                <input type="text" value="100" data-max="400" data-min="-200" data-name="pz">
+            </div>
+        </div>
+    </div>
+    <!-- 漫反射 -->
+    <div class="act-diffuse">
+        <div class="diffuse-tit clearfix">
+            <p class="fl"><i class="act-toggle-icon"></i>可编辑网格</p>
+            <!--<span class="fr"></span>-->
+        </div>
+        <div class="property-block">
+            <div class="element-position ">
+                <span class="element-edit-title distance">名字:</span>
+                <input type="text" class="inputlarge">
+            </div>
+            <div class="element-position mgtop">
+                <span class="element-edit-title ">统计:</span>
+                <div class="divblock">
+                    <span>顶点：2000</span> <br/>
+                    <span>三角面：2000</span><br/>
+                    <span>三角面：2000</span><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% } %>
+
+ </script>
+
+  </body>
+</html>

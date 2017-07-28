@@ -1,0 +1,217 @@
+body{
+  background:@bgcolor;
+  font-family: @font-family;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.hide{
+  //display: none;
+  top:-500px;
+}
+@bgcolor:#1b1a1a;
+@bghover:#595959;
+@leftbg:#3a3a3a;
+@leftborder:#a3a3a3;
+@listhover:#4d4d4d;
+@mangetitle:#262627;
+@groupdetail:#1a1919;
+@iconduihao:#2f9ecf;
+
+
+@batchhover:#ed9125;
+
+
+@headcolor:#333333;
+@headheight:55px;
+@logow:79px;
+@logoh:17px;
+@logoimg:"../img/bgimg.png";
+@border-color:#000000;
+
+//字体
+@font-family:"Microsoft YaHei";
+@font-large:14px;
+@font-samll:12px;
+@color-bg:#b2b2b2;
+@color-hover:#ffffff;
+@color-font-one:#b2b2b2;
+
+.ulformat(@range:0px) {
+  list-style: none;
+  margin:@range;
+  padding:@range;
+}
+
+input,textarea{
+  background: @headcolor;
+  border-radius: 4px;
+  height: 21px;
+  text-align: center;
+}
+.inputsmall{
+  width: 38px;
+}
+.inputlarge{
+  margin-left:10px;
+  width: 189px;
+}
+
+/**
+*set background
+*/
+html,body{
+  width:100%;
+  height:100%;
+}
+body{
+  font-size:12px;
+  color:#b2b2b2;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{
+  margin: 0;
+  padding: 0;
+  .setActColor();
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family:  microsoft yehei; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  border:none;
+  outline-style:none;
+}
+
+a{
+  text-decoration:none;
+  .setActColor();
+}
+.fl{float:left;}
+.fr{float:right;}
+
+textarea{resize: none}
+/**
+ * css为clearfix，清除浮动
+ */
+.clearfix::before,
+.clearfix::after{
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+  *zoom:1;/*IE/7/6*/
+  *overflow:hidden;/*IE/7/6*/
+}
+
+/**
+ * 清除列表样式
+ */
+ul,ol{
+  list-style:none;
+}
+.hide{
+  display: none;
+}
+
+
+@bgcolor:#1b1a1a;
+@headcolor:#333333;
+@headheight:55px;
+
+@actBgColor: #595959;
+@actColor:#b2b2b2;
+@actBarColor:#1aa9dc;
+
+/**
+*set background
+*/
+.setActBg(){
+  background-color:@headcolor;
+}
+
+/**
+*set background
+*/
+.setActColor(){
+  color:@actColor;
+}
+/**
+*set radius
+*/
+.setActRadius(){
+  border-radius:4px;
+}
+/**
+*set vertical-align
+*/
+.setActVertical(){
+  vertical-align:middle;
+}
+
+
+/**
+*set border
+*/
+@actSelectColor:#fff;
+.setBorderL(@w,@c){
+  border-left:@w solid @c;
+}
+.setBorderR(@w,@c){
+  border-right:@w solid @c;
+}
+.setBorderB(@w,@c){
+  border-bottom:@w solid @c;
+}
+
+.setBorderT(@w,@c){
+  border-top:@w solid @c;
+}
+
+.setBorder(@w,@c){
+  border:@w solid @c;
+}
+
+/**
+*set box-sizing;
+*/
+.setBox(){
+  box-sizing:border-box;
+}
+
+/**
+*set font-size:14px;
+*/
+.setFontSize(){
+  font-size:14px;
+}
+/**
+* 设置弹窗框共用css
+*/
+.sources-btn(){
+  float: right;
+  height: 26px;
+  line-height: 26px;
+  cursor: pointer;
+  border:1px solid @border-color;
+  border-radius: 4px;
+  padding:0px 38px;
+  margin:5px 20px 0px 0px;
+}
+.sources-btn-hover(){
+  background: @batchhover;
+  color:#fff;
+}
+
+

@@ -1,0 +1,392 @@
+//@import "common";
+
+.toggle-slide{
+    position: absolute;
+    left: 42px;
+    top: 0px;
+    width: 262px;
+    height: 100%;
+    background-color: #595959;
+
+    .history-report{
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 31px;
+        background-color: #3a3a3a;
+        .setBox();
+        padding-bottom: 35px;
+        h3{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            .setBorderB(1px,#000);
+            background-color: @actBgColor;
+            color:#eee;
+        }
+        .history-bot{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 35px;
+            .setBorderT(1px,#000);
+            background-color: @actBgColor;
+        }
+        .history-content{
+            li{
+                height: 30px;
+                line-height: 30px;
+                .setBorderB(1px,#333);
+                .list-selected{
+                width: 30px;
+                height: 100%;
+                .setBorderR(1px,#333);
+                text-align: center;
+                i{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: middle;
+                    background-color: #000;
+                    border-radius: 4px;
+                }
+              }
+                .file-icon{
+                    width: 18px;
+                    height: 16px;
+                    vertical-align: text-bottom;
+                    margin:0 13px;
+                    margin-top: 6px;
+                    background: url(../img/webEngine.png) -31px -158px no-repeat;
+                }
+            }
+            li:hover,li.active{
+                background-color: @listhover;
+            }
+            li.active i{
+                background: url(../img/webEngine3.png) -1167px -465px no-repeat;
+                background-color: #000;
+            }
+            li.next-active{
+              opacity:0.4;
+            }
+        }
+        .left-line-bar{
+            display: none !important;
+        }
+        .ps-scrollbar-y-rail{
+            width: 5px;
+            right: 0 !important;
+            border-radius:0;
+            .setBorderL(1px,#000);
+            .ps-scrollbar-y{
+                width: 100%;
+                border-radius:0;
+                .setBorderT(1px,#000);
+                .setBorderB(1px,#000);
+            }
+        }
+    }
+
+}
+
+// 历史功能面板
+  .history-r{
+    width: 367px;
+    z-index:1;
+    }
+  .act-r .history-act{
+    left: 100%;
+    .setBorderB(1px,#000);
+    .setBox();
+    .act-tab{
+      width: 100%;
+      li{
+        width: 50%;
+        a{
+          width: 100% !important;
+        }
+      }
+    }
+    //VR设置
+    .act-setvr{
+      height: 100%;
+      position: relative;
+      padding-top: 0 !important;
+      .vr-sm{
+        height: 58px;
+        padding:0 24px;
+        padding-top: 22px;
+        .setBox();
+        .on-off{
+          top: -4px;
+        }
+      }
+      .diffuse-tit{
+        height: 34px ;
+        line-height: 34px;
+        p{
+          float: none;
+          text-align: center;
+          font-size:14px;
+          color:#eee;
+          i{
+            float: left;
+            margin-top: 11px;
+          }
+        }
+      }
+      .act-normal{
+        .act-material-color{
+          position: relative;
+          padding: 24px 23px;
+          .material-color-ph{
+            margin-bottom: 24px;
+            color:#eee;
+          }
+        }
+        .set-scale{
+          margin-bottom: 24px;
+          button{
+            float: left;
+            margin-right: 15px;
+            width: 74px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            border-radius:4px;
+            font-size:12px;
+            background-color: #777;
+            color:#eee;
+          }
+          button:last-child{
+            margin-right: 0;
+          }
+        }
+        .scale-figure{
+          width: 100%;
+          height: 219px;
+          border-radius:4px;
+          overflow: hidden;
+        }
+      }
+      .issue-con-btn{
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        >div{
+          display: inline-block;
+          .setBorder(1px,#000);
+          .setActRadius();
+        }
+        button{
+          display: inline-block;
+          width: 111px;
+          height: 34px;
+          line-height:34px;
+          text-align: center;
+          .setActBg();
+          .setBorderR(1px,#000);
+          cursor:pointer;
+        }
+        .issue-con-sure{
+          .setBorder(0px,#000);
+        }
+        button:hover{
+          background: #222;
+        }
+      }
+    }
+
+    //发布设置
+    .act-issue{
+      height: 100%;
+      position: relative;
+      //上传
+      .plupload{
+        padding: 24px 20px 60px 20px;
+        .plupload-img{
+          padding: 0 26px;
+          margin-bottom: 20px;
+          .plupload-con{
+            height: 202px;
+            .setBorder(1px,#000);
+            background:linear-gradient(to bottom,rgb(40,40,40),rgb(66,66,66));
+            a{
+              display: block;
+              height: 100%;
+              overflow: hidden;
+            }
+            .plupload-icon{
+              width: 48px;
+              height: 48px;
+              margin: 0 auto;
+              margin-top:45%;
+              background:url(../img/webEngine1.png) -710px -929px no-repeat;
+              transform:translatey(-50%);
+            }
+            .plupload-tip{
+              text-align: center;
+              font-size:14px;
+              color:#eee;
+              margin-top: 15px;
+            }
+          }
+        }
+        .material-color-ph{
+            span{
+              color:#eee;
+              margin-right: 10px;
+            }
+            .material-progress{
+              padding: 0;
+              height:59px;
+              textarea{
+                .setActRadius();
+                .setBox();
+                width: 100%;
+                height: 100%;
+                text-align: left;
+                padding: 10px;
+              }
+            }
+          p{
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            i{
+              font-style:normal;
+            }
+            span{
+              margin-right: 0;
+              .setActColor();
+            }
+          }
+        }
+        .upload-describ{
+          margin-bottom: 0;
+        }
+
+      }
+
+      //设置
+      .act-setvr;
+      .issue-set{
+        .setBorderB(1px,#000);
+        .issue-pindao{
+          .material-progress{
+           height:24px;
+            padding: 0;
+            .tly-selected{
+              max-width:120px;
+              .act-normal-select{
+                margin-right: 0 !important;
+                margin-bottom: 10px;
+              }
+              .act-normal-select:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+          span{
+            margin-right: 17px;
+            line-height: 20px;
+          }
+          select{
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+            .setActBg();
+            .setActColor();
+            .setActRadius();
+          }
+        }
+        .act-normal-select{
+          padding: 0;
+        }
+      }
+
+    }
+  }
+//  开关按钮
+.on-off{
+  position: relative;
+  width: 49px;
+  height: 22px;
+  .setActRadius();
+  background-color: #000;
+  overflow: hidden;
+  cursor:pointer;
+  //禁止选中文字
+  -moz-user-select:none;/*火狐*/
+  -webkit-user-select:none;/*webkit浏览器*/
+  -ms-user-select:none;/*IE10*/
+  -khtml-user-select:none;/*早期浏览器*/
+  user-select:none;
+
+  span{
+    margin-right: 0 !important;
+    color:#3ea6d6;
+    font-size:14px;
+    padding: 0 8px;
+    line-height: 20px;
+    opacity: 0;
+    transition:all 0.3s;
+  }
+  i{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    width: 16px;
+    .setBox();
+    .setBorder(1px,#000);
+    background-color: #b2b2b2;
+    .setActRadius();
+    cursor:pointer;
+    z-index:1;
+    transition:all 0.3s;
+  }
+  b{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    opacity: 1;
+    font-size:14px;
+    font-weight:400;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 10px;
+    .setActRadius();
+    .setBox();
+    transition:all 0.3s;
+  }
+}
+
+.on-off.on{
+
+  i{
+    left: 33px;
+  }
+  span{
+    opacity: 1;
+  }
+  b{
+    width:0;
+    opacity: 0;
+    padding-right: 0px;
+  }
+}
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Wed Jul 26 16:13:45 2017
+ By admin
+</metadata>
+<defs>
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face 
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="896"
+    descent="-128"
+    x-height="792"
+    bbox="0 -63 1024 831.661"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0078-E73B"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
+ />
+    <glyph glyph-name="x" unicode="x" horiz-adv-x="1001" 
+d="M281 543q-27 -1 -53 -1h-83q-18 0 -36.5 -6t-32.5 -18.5t-23 -32t-9 -45.5v-76h912v41q0 16 -0.5 30t-0.5 18q0 13 -5 29t-17 29.5t-31.5 22.5t-49.5 9h-133v-97h-438v97zM955 310v-52q0 -23 0.5 -52t0.5 -58t-10.5 -47.5t-26 -30t-33 -16t-31.5 -4.5q-14 -1 -29.5 -0.5
+t-29.5 0.5h-32l-45 128h-439l-44 -128h-29h-34q-20 0 -45 1q-25 0 -41 9.5t-25.5 23t-13.5 29.5t-4 30v167h911zM163 247q-12 0 -21 -8.5t-9 -21.5t9 -21.5t21 -8.5q13 0 22 8.5t9 21.5t-9 21.5t-22 8.5zM316 123q-8 -26 -14 -48q-5 -19 -10.5 -37t-7.5 -25t-3 -15t1 -14.5
+t9.5 -10.5t21.5 -4h37h67h81h80h64h36q23 0 34 12t2 38q-5 13 -9.5 30.5t-9.5 34.5q-5 19 -11 39h-368zM336 498v228q0 11 2.5 23t10 21.5t20.5 15.5t34 6h188q31 0 51.5 -14.5t20.5 -52.5v-227h-327z" />
+    <glyph glyph-name="jiahao" unicode="&#xe646;" 
+d="M943 486h-324v324h-213v-324h-324v-213h324v-324h213v324h324v213z" />
+    <glyph glyph-name="editor" unicode="&#xe6c6;" 
+d="M211 246l184 -191l452 470l-184 192zM64 -63l290 70l-187 194zM897 767q-23 24 -39.5 37.5t-36.5 22t-39 3t-38 -25.5l-35 -40l187 -195l38 37q19 20 24.5 40t-3.5 41t-22 38.5t-36 41.5v0v0zM897 767z" />
+    <glyph glyph-name="gongyongsanjiaoxingzuobian" unicode="&#xe70d;" 
+d="M742 0l-460 384l460 384v-768z" />
+    <glyph glyph-name="duihao" unicode="&#xe73b;" 
+d="M780 -96zM340 145l-275 273l69 68l275 -273l481 478l69 -68l-481 -478l-69 -68l-69 68v0zM340 145z" />
+    <glyph glyph-name="shanchu" unicode="&#xe6b6;" 
+d="M745 543q-18 9 -34 -3q-14 -10 -14 -28v-412v-4h-370v4v321v93q-1 17 -16 27t-31 2q-19 -9 -19 -31v-448v-1q0 -25 24 -32q1 0 2.5 -0.5t2.5 -0.5h445q8 2 8 3q21 8 21 31v448v2q-1 20 -19 29zM844 627q-3 11 -12 18t-20 7h-193h-4v3l0.5 30.5t-0.5 30.5q0 19 -18 22h-2
+h-166l-4 -1q-16 -3 -16 -20v-62v-3h-4h-192q-13 0 -22 -7.5t-11 -19.5q-1 0 -1 -5v-1q1 -7 1 -8q6 -25 33 -25h598h3q24 1 30 25q0 1 1 3v2v6zM574 652h-124v44h124v-44zM631 164v162v161v3q-1 9 -8.5 15t-17.5 4q-16 -4 -16 -21v-323v-2q1 -9 7 -14.5t15 -5.5q8 0 14 6.5
+t6 14.5zM433 488v3q0 13 -11 18t-21 -2q-9 -6 -9 -18v-322v-2q1 -12 11 -17.5t20.5 0.5t10.5 19q-1 27 -1 161v80v80zM515 144q18 3 18 21v162v161v3q-1 9 -8.5 15t-16.5 4q-17 -4 -17 -21v-323v-2q1 -10 8.5 -15.5t15.5 -4.5z" />
+    <glyph glyph-name="wenjianjia" unicode="&#xe658;" 
+d="M810 599h-275l-23 33q-3 6 -9 17.5t-8 15.5t-7 11.5t-8.5 10t-8.5 6t-11 5t-14 1.5h-232q-27 0 -46.5 -19.5t-19.5 -47.5v-99v-33v-364q0 -28 19.5 -47.5t46.5 -19.5h596q27 0 46.5 19.5t19.5 47.5v397q0 27 -19.5 46.5t-46.5 19.5v0z" />
+    <glyph glyph-name="sousuo" unicode="&#xe662;" 
+d="M519 69q-104 0 -192.5 51t-140 139t-51.5 191t51.5 191t140 139t192.5 51t192.5 -51t139.5 -139t51 -191t-51 -191t-139.5 -139t-192.5 -51zM519 772q-88 0 -163 -43t-118.5 -117.5t-43.5 -161.5t43.5 -161.5t118.5 -117.5t163 -43t163 43t118 117.5t43 161.5t-43 161.5
+t-118 117.5t-163 43zM739 179l147 -195l-47 -36l-147 195z" />
+    <glyph glyph-name="gongyongsanjiaoxingzuobian1" unicode="&#xe605;" 
+d="M896 614l-384 -460l-384 460h768z" />
+    <glyph glyph-name="wenjianjia1" unicode="&#xe669;" 
+d="M0 725h956v0q28 0 48 -20t20 -48v-648q0 -29 -20 -49t-48 -20h-888q-28 0 -48 20t-20 49v716zM423 828h-355q-28 0 -48 -20t-20 -49v-34h546l-38 57q-12 19 -37 32.5t-48 13.5v0z" />
+  </font>
+</defs></svg>
