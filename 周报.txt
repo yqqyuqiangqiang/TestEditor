@@ -1,0 +1,12 @@
+
+本周
+测试openlayers的兰伯特投影效果。
+制作兰伯特投影加载瓦片及矢量数据页面。
+使用openlayers绘制点线面，进行交互和添加图片。
+使用openlayers，制作鼠标添加点线面功能。
+使用openlayers绘制兰伯特投影等值线。
+学习wind-map，为了添加流动的风场。
+解析wind-map代码。
+
+下周
+深入学习wind-map，深度解析wind-map代码。
